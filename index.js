@@ -21,5 +21,4 @@ app.use(router);
 
 app.listen(port, () => {
   console.log(`Solo server listening on localhost:${port} 🎉`)
-  console.log(' ---> the path', path.resolve(__dirname, './prisma/.env'));
 });
