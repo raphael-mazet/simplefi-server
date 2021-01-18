@@ -20,5 +20,5 @@ app.use(cors());
 app.use(router);
 
 app.listen(port, () => {
-  console.log(`Solo server listening on localhost:${port} 🎉`)
+  console.log(`SimpleFi server listening on localhost:${port} 🎉`)
 });
