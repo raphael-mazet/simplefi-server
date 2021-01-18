@@ -2,10 +2,8 @@ const Fields = require ('../models/fields');
 const path = require('path');
 
 async function getFields (req, res) {
-  console.log(' ---> request received!');
   try {
     const fields = await Fields.getFields();
-    console.log(' ---> fields', fields);
     res.status = 200;
     res.send(fields);
   } catch (err) {
