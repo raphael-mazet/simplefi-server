@@ -1,7 +1,6 @@
 const express = require('express');
 const router = require('./router');
 const cors = require('cors');
-const morgan = require('morgan');
 const path = require('path')
 
 require('dotenv').config()
@@ -14,7 +13,6 @@ const corsConfig = {
   credentials: true,
 };
 
-// app.use(morgan('tiny'));
 app.use(express.json());
 app.use(cors());
 app.use(router);
