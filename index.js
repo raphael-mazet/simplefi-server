@@ -16,7 +16,7 @@ const corsConfig = {
 
 app.use(morgan('tiny'));
 app.use(express.json());
-app.use(cors(corsConfig));
+app.use(cors());
 app.use(router);
 
 app.listen(port, () => {
