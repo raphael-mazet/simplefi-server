@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 3020;
 
 const corsConfig = {
-  origin: process.env.NODE_ENV === 'production' ? 'https://simplefi.finance' : 'http://localhost:3000',
+  origin: process.env.NODE_ENV === 'production' ? 'https://simplef.finance' : 'http://localhost:3000',
   credentials: true,
 };
 
