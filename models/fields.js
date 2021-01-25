@@ -19,7 +19,13 @@ async function getFields() {
         cropTokens: {
           select: {
             tokenId: true,
-            unclaimedBalanceMethod: true
+            unclaimedBalanceMethod: true,
+            token: {
+              select: {
+                name:true,
+                address: true
+              }
+            }
           }
         },
         contractAddresses: {
