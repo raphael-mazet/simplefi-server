@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^2.10.2",
+    "@prisma/client": "^2.15.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
@@ -21,7 +21,7 @@
     "pg": "^8.3.3"
   },
   "devDependencies": {
-    "@prisma/cli": "^2.10.0"
+    "@prisma/cli": "^2.15.0"
   },
   "engines": {
     "node": "14.x"
