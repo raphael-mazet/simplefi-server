@@ -50,11 +50,12 @@ model Protocol {
 model Token {
   tokenId                                       String             @id @map("token_id")
   protocolId                                    String?            @map("protocol_id")
-  name                                          String?            @unique
+  name                                          String             @unique
   priceApi                                      String?            @map("price_api")
   address                                       String?
   isBase                                        Boolean            @map("is_base")
   contractInterfaceId                           String?            @map("contract_interface")
+  decimals                                      Int
   contractInterface                             ContractInterface? @relation("contract_interfaceTotoken", fields: [contractInterfaceId], references: [ciId])
   protocol                                      Protocol?          @relation("protocolTotoken_protocol_id", fields: [protocolId], references: [protocolId])
   field_field_receipt_tokenTotoken              Field?             @relation("field_receipt_tokenTotoken")
