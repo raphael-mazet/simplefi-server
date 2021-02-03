@@ -85,7 +85,6 @@ model ContractInterface {
   name            String            @unique
   abi             Json
   isErc           Boolean?          @map("is_erc")
-  decimals        Int?
   contractAddress contractAddress[] @relation("contract_addressTocontract_interface")
   token           Token[]           @relation("contract_interfaceTotoken")
 
