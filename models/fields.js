@@ -13,7 +13,12 @@ async function getFields() {
         seedTokens: {
           select: {
             tokenId: true,
-            seedIndex: true
+            seedIndex: true,
+            token: {
+              select: {
+                decimals: true
+              }
+            }
           }
         },
         cropTokens: {
@@ -23,7 +28,8 @@ async function getFields() {
             token: {
               select: {
                 name:true,
-                address: true
+                address: true,
+                decimals: true
               }
             }
           }
@@ -32,6 +38,7 @@ async function getFields() {
           select: {
             addressTypes: true,
             address: true,
+            decimals: true,
             contractInterface: true
           }
         },
@@ -56,6 +63,7 @@ async function getFields() {
                         tokenId: true,
                         name: true,
                         contractInterface: true,
+                        decimals: true
                       }
                     }
                   }
@@ -64,7 +72,8 @@ async function getFields() {
                   select: {
                     token: {
                       select: {
-                        name: true
+                        name: true,
+                        decimals: true
                       }
                     }
                   }
