@@ -32,6 +32,7 @@ async function getFields() {
           select: {
             addressTypes: true,
             address: true,
+            decimals: true,
             contractInterface: true
           }
         },
