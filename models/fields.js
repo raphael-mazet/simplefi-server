@@ -32,6 +32,7 @@ async function getFields() {
           select: {
             addressTypes: true,
             address: true,
+            decimals: true,
             contractInterface: true
           }
         },
@@ -56,6 +57,7 @@ async function getFields() {
                         tokenId: true,
                         name: true,
                         contractInterface: true,
+                        decimals: true
                       }
                     }
                   }
@@ -64,7 +66,8 @@ async function getFields() {
                   select: {
                     token: {
                       select: {
-                        name: true
+                        name: true,
+                        decimals: true
                       }
                     }
                   }
