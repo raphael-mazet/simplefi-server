@@ -54,6 +54,7 @@ Refer to the [SimpleFi client](https://github.com/raphael-mazet/simplefi-client)
 ## Contributing
 
 Improvements and remixes are welcome
+
 Please donate to this open source project on [Gitcoin](https://gitcoin.co/grants/2235/simplefi)!
 
 ## Author
