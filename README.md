@@ -28,14 +28,19 @@ DATABASE_URL = postgres://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${
 ETHERSCAN_API_KEY = <your API key>
 ```
 
-3. Start the backend server
+3. Install and initialise dependencies
+
 ```
 npm install
+npx prisma generate
+```
+
+4. Start the backend server
+```
 nodemon index.js
 ```
 
-
-4. Run the client
+5. Run the client
 
 Refer to the [SimpleFi client](https://github.com/raphael-mazet/simplefi-client) documentation
 
@@ -48,8 +53,8 @@ Refer to the [SimpleFi client](https://github.com/raphael-mazet/simplefi-client)
 
 ## Contributing
 
-Improvements and remixes are welcome.
-
+Improvements and remixes are welcome
+Please donate to this open source project on [Gitcoin](https://gitcoin.co/grants/2235/simplefi)!
 
 ## Author
 
