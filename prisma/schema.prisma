@@ -114,6 +114,13 @@ model secondaryField {
   @@map("secondary_field")
 }
 
+model Account {
+  accountId      Int     @id @default(autoincrement()) @map("account_id")
+  accountAddress String? @unique @map("account_address")
+
+  @@map("account")
+}
+
 enum transaction_in_output {
   token
   fiat
